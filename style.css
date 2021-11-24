@@ -19,7 +19,7 @@ body{
     width: 90vw;
 }
 
-.panel, .panel-dos, .panel-tres, .panel-cuatro, .panel-cinco{
+.panel{
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,29 +30,59 @@ body{
     flex: 0.5;
     margin: 10px;
     position: relative;
+    transition: flex 0.7s ease-in;
 }
 
-.panel{
+#panel-uno{
     background-image: url('https://i.postimg.cc/4dNym5RV/Wallpapers-Paisajes-by-Alms-258.jpg');
     background-repeat: no-repeat;
 }
 
-.panel-dos{
+#panel-dos{
     background-image: url('https://i.postimg.cc/2y15xS65/Wallpapers-Paisajes-by-Alms-259.jpg');
     background-repeat: no-repeat;
 }
 
-.panel-tres{
+#panel-tres{
     background-image: url('https://i.postimg.cc/V6G6MCzT/Wallpapers-Paisajes-by-Alms-260.jpg');
     background-repeat: no-repeat;
 }
 
-.panel-cuatro{
+#panel-cuatro{
     background-image: url('https://i.postimg.cc/pVSrLzG5/Wallpapers-Paisajes-by-Alms-261.jpg');
     background-repeat: no-repeat;
 }
 
-.panel-cinco{
+#panel-cinco{
     background-image: url('https://i.postimg.cc/c48HgC29/Wallpapers-Paisajes-by-Alms-262.jpg');
     background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+    transition: opacity 0.3s ease-in 0.4s;
+    border-radius: 50px;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel-cuatro,.panel-cinco{
+        display: none;
+    }
 }
