@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    overflow:hidden;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel, .panel-dos, .panel-tres, .panel-cuatro, .panel-cinco{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+}
+
+.panel{
+    background-image: url('https://i.postimg.cc/4dNym5RV/Wallpapers-Paisajes-by-Alms-258.jpg');
+    background-repeat: no-repeat;
+}
+
+.panel-dos{
+    background-image: url('https://i.postimg.cc/2y15xS65/Wallpapers-Paisajes-by-Alms-259.jpg');
+    background-repeat: no-repeat;
+}
+
+.panel-tres{
+    background-image: url('https://i.postimg.cc/V6G6MCzT/Wallpapers-Paisajes-by-Alms-260.jpg');
+    background-repeat: no-repeat;
+}
+
+.panel-cuatro{
+    background-image: url('https://i.postimg.cc/pVSrLzG5/Wallpapers-Paisajes-by-Alms-261.jpg');
+    background-repeat: no-repeat;
+}
+
+.panel-cinco{
+    background-image: url('https://i.postimg.cc/c48HgC29/Wallpapers-Paisajes-by-Alms-262.jpg');
+    background-repeat: no-repeat;
+}
