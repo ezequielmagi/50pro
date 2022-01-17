@@ -1,2 +1,2 @@
-**# 50 Proyectos con JS**
+#** 50 Proyectos con JS**
 ## Porque se aprende haciendo!
